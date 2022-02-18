@@ -2,7 +2,9 @@ katet1 = [int(i) for i in input('Введите первые катеты a: ').
 katet2 = [int(i) for i in input('Введите вторые катеты b: ').split()]
 
 zip_katet = list(zip(katet1, katet2))
+
 print('Количество твоих треугольников = ', len(zip_katet))
+
 
 treugolnik = int(input('Выбери номер треугольника, для взаимодействия: '))
 
