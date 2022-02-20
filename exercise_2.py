@@ -32,30 +32,35 @@ jurnal = [
     {'name': 'Kiril', 'age': 27, 'gender': 'male'},
     {'name': 'Mihail', 'age': 30, 'gender': 'male'}
 ]
-
+#Выводит общее количество людей в журнале
 #num = len(jurnal)
 #print(f'Количество всех людей в журнале: {num}')
 
+#Выводит общее количество мужчин и девушек в журнале
 gn = [gn['gender'] for gn in jurnal]
 mn = gn.count('male')
 wmn = gn.count('female')
 #print(f'Количество мужчин: {mn}, и количество девушек: {wmn}')
 
+#Выводит общее количество совершеннолетних в журнале
 ages = [gn['age'] for gn in jurnal]
 ag = ([ag for ag in ages if ag > 17])
 ag = len(ag)
 #print(f'Количество совершеннолетних людей в журнале: {ag}')
 
+#Выводит список имен в журнале
 names = [print(gn['name']) for gn in jurnal]
-#print(names)
 
+#Выводит множество возрастов
 ages = [gn['age'] for gn in jurnal]
 no_repeat = set(ages)
 #print(no_repeat)
 
+#Выводит 3 наиболее встречающихся имени в журнале
 namess = Counter([gn['name'] for gn in jurnal])
 #print(namess.most_common(3))
 
+#Выводит мужчин страше 35 и с именем на 'F'
 #for i in jurnal:
   #  if i['age'] > 34:
       #  if i['name'][0] == "F":
